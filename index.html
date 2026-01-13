@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeページ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class ="header-right">
+   
+    <!-- <ul>
+      <li class="selected">
+        <a href="../東北本線時刻表/index.html">
+          東北本線時刻表
+        </a>
+      </li>
+      <li class="selected">
+        <a href="../仙石東北ライン時刻表/index.html">
+          仙石東北ライン時刻表
+        </a>
+      </li>
+      <li class="selected">
+        <a href="../仙石線時刻表/index.html">
+          仙石線時刻表
+        </a>
+      </li>
+    </ul> -->
+  </div>
+
+  <main>
+    <h1>JR時刻表 検索ページ</h1>
+    <br>
+    <br>
+    <h1>路線で探す</h1>
+    <br>
+    <div class="flex-center"> 
+      <div class="header-right">
+        <ul>
+          <li class="selected">
+            <a href="東北本線時刻表/index.html">
+              東北本線時刻表
+            </a>
+          </li>
+          <li class="selected">
+            <a href="仙石東北ライン時刻表/index.html">
+              仙石東北ライン時刻表
+            </a>
+          </li>
+          <li class="selected">
+            <a href="仙石線時刻表/index.html">
+              仙石線時刻表
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <h1>条件を入れて探す</h1>
+      <br>
+      始発駅検索
+    </button>
+    </div>
+    <div class="contain">
+      <div class="top">
+        <label for="stationInput">始発駅名を入れて検索：</label>
+        <input type="text" id="stationInput" placeholder="例:松島" />
+      </div>
+      <div class="bottom">
+        <table id="resultsTable">
+          <label for="timeSelect">時間で検索：</label>
+    <select id="timeSelect">
+      <option value="">指定なし</option>
+      <option value="05">05時台</option>
+      <option value="06">06時台</option>
+      <option value="07">07時台</option>
+      <option value="08">08時台</option>
+      <option value="09">09時台</option>
+      <option value="10">10時台</option>
+      <option value="11">11時台</option>
+      <option value="12">12時台</option>
+      <option value="13">13時台</option>
+      <option value="14">14時台</option>
+      <option value="15">15時台</option>
+      <option value="16">16時台</option>
+      <option value="17">17時台</option>
+      <option value="18">18時台</option>
+      <option value="19">19時台</option>
+      <option value="20">20時台</option>
+      <option value="21">21時台</option>
+      <option value="22">22時台</option>
+      <option value="23">23時台</option>
+      <option value="00">00時台</option>
+      <!-- 必要に応じて追加 -->
+    </select>
+    <button id="sortDurationBtn">
+    所要時間順：指定なし
+    </button>
+          <thead>
+            <tr>
+              <th>駅名</th>
+              <th>路線名</th>
+              <th>出発時刻</th>
+              <th>行き先  </th>
+              <th>所要時間</th>
+              <th>運転曜日</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  
+
+  <script src="script.js"></script>
+  </main>
+</body>
+</html>
